@@ -1,0 +1,35 @@
+{
+  "name": "hw103-testingasync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-jest": "^24.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.0.0",
+    "webpack-cli": "^3.2.1",
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint .",
+    "build": "webpack --mode production",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickolayLabazov/hw103-testingasync.git"
+  },
+  "author": "Nickolay Labazov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickolayLabazov/hw103-testingasync/issues"
+  },
+  "homepage": "https://github.com/NickolayLabazov/hw103-testingasync#readme"
+}

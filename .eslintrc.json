@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "no-plusplus": "off",
+
+        "class-methods-use-this": "off",
+        "no-unused-vars": "off",
+        "no-plusplus": "off",
+
+        "no-undef": "off"       
+     }
+}
