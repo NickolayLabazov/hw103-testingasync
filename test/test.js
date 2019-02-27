@@ -38,14 +38,11 @@ test('Ошибка', async () => {
   for (let i = 0; i < data.length; i++) {
     bufferView[i] = data.charCodeAt(i);
   }
-
   readGameSaving.mockReturnValue(buffer);
-  const reseived = 'Ошибка';
   expect.assertions(1);
   const expected = 'Ошибка';
   const gameSavingLoader = new GameSavingLoader();
   const load = gameSavingLoader.load();
-  try {
-    await load();
-  } catch (error) { expect(reseived).toEqual(expected); }
+  const reseived = await load();
+  expect(reseived).toEqual(expected);
 });

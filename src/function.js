@@ -21,9 +21,14 @@ export default class GameSavingLoader {
       const data = await readGameSaving();
       const gameSavingData = new GameSavingData(data);
       const str = await gameSavingData.json();
-      const result = await JSON.parse(str);
-      console.log(result);
-      return result;
+      try {
+        const result = JSON.parse(str);
+        console.log(result);
+        return result;
+      } catch (error) {
+        console.log('Ошибка');
+        return 'Ошибка';
+      }
     };
   }
 }
